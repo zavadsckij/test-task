@@ -1,0 +1,14 @@
+.cards{
+  width:100%;
+  max-width: 2376px;
+  margin:0 auto;
+  padding: 115px 300px ;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  justify-content: space-between;
+}
+
+
+
+

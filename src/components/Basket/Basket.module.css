@@ -1,0 +1,14 @@
+.basket {
+    padding: 70px 80px;
+    background: #F8FAFC;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.basket h2 {
+    font-size: 37px;
+    line-height: 44px;
+    color: #000000;
+    font-weight: 500;
+    padding-bottom: 50px;
+}
