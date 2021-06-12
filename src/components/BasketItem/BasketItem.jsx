@@ -28,7 +28,7 @@ function BasketItem({id, img, title, color, volume, price, count, removeFromBask
             <strong>{priceItem*num}</strong>
             <button className = {s.trashButton}
             onClick = {()=>{
-                removeFromBasket(id)
+                removeFromBasket(id, volume, color, count)
             }}
             ></button>
         </div>

@@ -70,7 +70,10 @@ const reducer = (state = initialState, action) => {
       ...state,
       basket: [
         ...state.basket.filter((item) => {
-          return item.id !== action.id;
+          return item.id !== action.id ||  item.color !== action.color || 
+          item.count !== action.count ||
+          item.volume !== action.volume
+
         }),
       ],
     };
@@ -88,6 +91,6 @@ export const addToBasket = (basketItem) => ({
   type: "ADD_TO_BASKET",
   basketItem,
 });
-export const removeFromBasket = (id) => ({ type: "REMOVE_FROM_BASKET", id });
+export const removeFromBasket = (id, volume, color, count) => ({ type: "REMOVE_FROM_BASKET", id, volume, color, count});
 
 export default reducer;
