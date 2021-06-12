@@ -75,7 +75,7 @@ function Card({product, setCompare, addToBasket}) {
                         <span className = {s.price}>{price*count}</span>
                 </div>
                 <div className = {s.volume}>
-                    <label onClick = {(e)=>chooseVolume(e)}><span className = {s.fakeRadioActive}/><input checked className = {s.radio} name = 'volume' type="radio"/>100 мл</label>
+                    <label onClick = {(e)=>chooseVolume(e)}><span className = {s.fakeRadioActive}/><input className = {s.radio} name = 'volume' type="radio"/>100 мл</label>
                     <label onClick = {(e)=>chooseVolume(e)}><span className = {s.fakeRadio}/><input className = {s.radio} name = 'volume' type="radio"/>200 мл</label>
                     <label onClick = {(e)=>chooseVolume(e)}><span className = {s.fakeRadio}/><input className = {s.radio} name = 'volume' type="radio"/>300 мл</label>
                 </div>

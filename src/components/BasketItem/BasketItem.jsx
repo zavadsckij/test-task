@@ -8,7 +8,7 @@ function BasketItem({id, img, title, color, volume, price, count, removeFromBask
     useEffect(()=>{
         setCount(count)
         setPriceItem(price)
-    },[count])
+    },[count, price])
     return (
         <div className = {s.basketItem}>
             <img src={img} alt="basket img"/>
